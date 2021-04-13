@@ -10,7 +10,7 @@ $(slides_tex): %.tex: %.md preamble-slides.tex
 	    -o $@
 
 $(slides_pdf): %.pdf: %.tex
-	cd $(dir $@) && pdflatex $(notdir $<)
+	cd $(dir $@) && lualatex $(notdir $<)
 	rm $(basename $<).log $(basename $<).nav $(basename $<).aux $(basename $<).snm $(basename $<).toc
 
 all: $(slides_pdf)

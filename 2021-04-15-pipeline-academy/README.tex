@@ -87,7 +87,27 @@
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{-\maxdimen} % remove section numbering
 \usepackage{pgfpages}
-\setbeameroption{hide notes}
+\usepackage{luatexbase}
+\usepackage{microtype}
+\usepackage{luatextra}
+\usepackage{luaotfload}
+\usepackage{fontspec}
+\usepackage{unicode-math}
+
+\setmainfont[
+Extension=.otf,
+UprightFont={IBM Plex Serif-Text},
+BoldFont={IBM Plex Serif-Bold},
+ItalicFont={IBM Plex Serif-Italic},
+BoldItalicFont={IBM Plex Serif-BoldItalic}
+]{IBM Plex Serif}[Ligatures=TeX,Scale=MatchUppercase]
+% Scales Plex to default size, e.g., to Helvetica´s size.
+
+\setmonofont{IBM Plex Mono Text}[Scale=MatchLowercase,
+Ligatures=TeX]
+\setsansfont{IBM Plex Sans Text}[Scale=MatchUppercase,
+Ligatures=TeX]
+\setmathfont{Latin Modern Math}
 
 % CEU style guide
 % https://www.ceu.edu/sites/default/files/attachment/article/13110/ceugraphicsstandardsguideapril2015.pdf
@@ -157,6 +177,9 @@
 
 \begin{frame}{A slide}
 \protect\hypertarget{a-slide}{}
+Some text is included here. Numbers 1, 2, 3. \[
+y = \frac1\gamma \sum x_i^2
+\]
 \end{frame}
 
 \end{document}
