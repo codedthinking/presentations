@@ -4,6 +4,7 @@
 %
 \documentclass[
   ignorenonframetext,
+  aspectratio=54,
 ]{beamer}
 \usepackage{pgfpages}
 \setbeamertemplate{caption}[numbered]
@@ -75,6 +76,8 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \hypersetup{
+  pdftitle={Pipeline Data Academy},
+  pdfauthor={Miklós Koren},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
@@ -88,17 +91,17 @@
 
 % CEU style guide
 % https://www.ceu.edu/sites/default/files/attachment/article/13110/ceugraphicsstandardsguideapril2015.pdf
-\definecolor{CEUblue}{RGB}{0,152,195}
-\definecolor{CEUorange}{RGB}{234,96,118}
+\definecolor{CTred}{RGB}{229,32,32}
+\definecolor{CTgrey}{RGB}{153,153,153}
 
 
 % colors: white text on 90% black background
 \setbeamercolor{normal text}{fg=black,bg=white}
 
 % light blue as a highlight color
-\setbeamercolor*{structure}{fg=CEUblue}
-\setbeamercolor{section title}{fg=CEUorange}
-\setbeamercolor{alerted text}{use=structure,fg=CEUorange}
+\setbeamercolor*{structure}{fg=CTred}
+\setbeamercolor{section title}{fg=CTred}
+\setbeamercolor{alerted text}{use=structure,fg=CTred}
 \setbeamercolor*{palette primary}{use=structure,fg=structure.fg}
 \setbeamercolor*{palette secondary}{use=structure,fg=structure.fg!95!black}
 \setbeamercolor*{palette tertiary}{use=structure,fg=structure.fg!90!black}
@@ -140,22 +143,20 @@
 % \usepackage[notes,short,noibid,backend=biber]{biblatex-chicago}
 % \bibliography{course.bib} 
 
-\providecommand{\communicate}{\includegraphics[width=2.5em]{../assets/icons/lo-communicate.png}}
-\providecommand{\avoidrisk}{\includegraphics[width=2.5em]{../assets/icons/lo-avoid-risk.png}}
-\providecommand{\technicaldebt}{\includegraphics[width=2.5em]{../assets/icons/lo-technical-debt.png}}
-\providecommand{\prioritize}{\includegraphics[width=2.5em]{../assets/icons/lo-prioritize.png}}
-\providecommand{\assignment}{\includegraphics[width=2.5em]{../assets/icons/assignment.png}}
+\logo{\includegraphics[width=0.25\paperwidth]{../assets/logo/Horizontal/RGB/pdf/Koren_logo_horizontal_RGB_colorful.pdf}\hspace*{.70\paperwidth}}
 
-\providecommand{\exhibit}[1]{\includegraphics[keepaspectratio, height=0.9\textheight, width=\textwidth]{../assets/figures/#1}\\ {\tiny \input{../assets/figures/#1.citation.txt}}}
-
-\providecommand{\gabors}[2]{\includegraphics[keepaspectratio, height=0.9\textheight, width=\textwidth]{../assets/figures/bekes-kezdi/Ch#1_figures/ch#1-#2}\\ {\tiny Békés and Kézdi (2021, Chapter #1)}}
-
-\author{}
+\title{Pipeline Data Academy}
+\author{Miklós Koren}
 \date{}
 
 \begin{document}
+\frame{\titlepage}
 
-\begin{frame}
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+\begin{frame}{A slide}
+\protect\hypertarget{a-slide}{}
 \end{frame}
 
 \end{document}
