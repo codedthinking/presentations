@@ -25,6 +25,12 @@ Where: CEU MicroData, KRTK
 
 What: firm and worker behavior in the face of globalization and technical change. Mostly observational data.
 
+## Research is fun
+![](assets/img/mosoly.jpg)
+
+## Especially when combined with play
+![](assets/img/codebug.jpg)
+
 ## Teaching
 Where: CEU, European Economic Association, Carpentries, CodedThinking
 
@@ -37,8 +43,9 @@ What: Ensure data and code produce results published. Educate authors about best
 ## Features of academic research
 1. Always new questions, always new data
 2. Often new methods (!)
-2. Batch processing of "historical" data
-3. Full transparency (!)
+3. Batch processing of "historical" data
+4. Diverse and changing team
+5. Full transparency (!)
 
 # My Tools
 ## The pragmatic programmer
@@ -46,7 +53,7 @@ What: Ensure data and code produce results published. Educate authors about best
 
 ## Generic tools and technologies
 1. Plain text: .csv, .md, .yaml, .tex
-2. Command line: 
+2. Command line: fish, stdin, stdout, csvkit
 3. Version control: git, GitHub, Sublime Merge
 4. Dependency management: Make, bead
 
