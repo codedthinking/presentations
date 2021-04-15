@@ -372,8 +372,62 @@ about best practices.
 \end{itemize}
 \end{frame}
 
+\hypertarget{bead}{%
+\section{Bead}\label{bead}}
+
+\begin{frame}{Problem}
+\protect\hypertarget{problem}{}
+\begin{itemize}
+\tightlist
+\item
+  Where do I find this data?
+\item
+  Where did this data come from?
+\item
+  How did we create this data?
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Existing solutions}
+\protect\hypertarget{existing-solutions}{}
+\begin{itemize}
+\tightlist
+\item
+  Orhcestration systems: KNIME, Airflow, Luigi, Bubbles, TARR
+\item
+  People talking to people
+\end{itemize}
+\end{frame}
+
 \begin{frame}{Bead}
-\protect\hypertarget{bead}{}
+\protect\hypertarget{bead-1}{}
+\begin{itemize}
+\tightlist
+\item
+  Distributed: each analyst only responsible for their computation
+\item
+  Tool agnostic: any data stored in flat files, any script callable from
+  the command line (not enforced)
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Key concepts}
+\protect\hypertarget{key-concepts}{}
+A \textbf{bead} is a .zip file encapsulating
+
+\begin{enumerate}
+\tightlist
+\item
+  data
+\item
+  code used to compute it
+\item
+  \emph{reference} to its inputs
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Setup}
+\protect\hypertarget{setup}{}
 \begin{itemize}
 \tightlist
 \item

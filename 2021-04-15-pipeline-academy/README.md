@@ -84,5 +84,28 @@ What: Ensure data and code produce results published. Educate authors about best
 - [Tenders Electronic Daily 2009](https://data.europa.eu/euodp/en/data/dataset/ted-csv/resource/7caee4eb-0fc0-4fc0-ad1a-c970e63b40b4)
 - [Country codes](https://www.datahub.io/core/country-codes)
 
+# Bead
+
+## Problem
+- Where do I find this data?
+- Where did this data come from?
+- How did we create this data?
+
+## Existing solutions
+- Orhcestration systems: KNIME, Airflow, Luigi, Bubbles, TARR 
+- People talking to people
+
 ## Bead
+- Distributed: each analyst only responsible for their computation
+- Tool agnostic: any data stored in flat files, any script callable from the command line (not enforced)
+
+## Key concepts
+A **bead** is a .zip file encapsulating
+
+1. data
+2. code used to compute it
+3. *reference* to its inputs 
+
+## Setup
 - [Setup instructions](https://handbook.microdata.io/onboarding/setup#bead)
+
