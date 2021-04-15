@@ -164,7 +164,7 @@ Ligatures=TeX]
 \urlstyle{same}
 \usepackage[overlay,absolute]{textpos}
 
-\setbeamertemplate{itemize items}[square]
+\setbeamertemplate{items}[square]
 
 \TPGrid[10 mm,8 mm]{9}{8}
 % beamer's left and right margin is 10 mm. The top/bottom margin is ??
@@ -290,7 +290,7 @@ about best practices.
 \item
   Plain text: .csv, .md, .yaml, .tex
 \item
-  Command line:
+  Command line: fish, stdin, stdout, csvkit
 \item
   Version control: git, GitHub, Sublime Merge
 \item
@@ -319,9 +319,11 @@ about best practices.
 \begin{itemize}
 \tightlist
 \item
-  Business Disruptions from Social Distancing
+  \href{https://github.com/ceumicrodata/social-distancing}{Business
+  Disruptions from Social Distancing}
 \item
-  Expatriate Managers in International Trade
+  \href{https://github.com/korenmiklos/expat-analysis}{Expatriate
+  Managers in International Trade}
 \item
   Political Favoritism in Public Procurement
 \item
@@ -331,5 +333,53 @@ about best practices.
 
 \hypertarget{live-demo}{%
 \section{Live Demo}\label{live-demo}}
+
+\begin{frame}{Home bias in public procurement}
+\protect\hypertarget{home-bias-in-public-procurement}{}
+\begin{enumerate}
+\tightlist
+\item
+  Get data form Tenders Electronic Daily on EU procurement
+\item
+  Check how many tenders are won by firms in the same country as the
+  buyer
+\item
+  Keep all steps reproducible. Tools used:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Make
+  \item
+    git
+  \item
+    csvkit
+  \item
+    SQL
+  \end{itemize}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Data sources}
+\protect\hypertarget{data-sources}{}
+\begin{itemize}
+\tightlist
+\item
+  \href{https://data.europa.eu/euodp/en/data/dataset/ted-csv/resource/7caee4eb-0fc0-4fc0-ad1a-c970e63b40b4}{Tenders
+  Electronic Daily 2009}
+\item
+  \href{https://www.datahub.io/core/country-codes}{Country codes}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Bead}
+\protect\hypertarget{bead}{}
+\begin{itemize}
+\tightlist
+\item
+  \href{https://handbook.microdata.io/onboarding/setup\#bead}{Setup
+  instructions}
+\end{itemize}
+\end{frame}
 
 \end{document}

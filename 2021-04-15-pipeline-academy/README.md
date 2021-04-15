@@ -65,9 +65,24 @@ What: Ensure data and code produce results published. Educate authors about best
 
 # Recent Projects
 ## Recent projects
-* Business Disruptions from Social Distancing
-* Expatriate Managers in International Trade
+* [Business Disruptions from Social Distancing](https://github.com/ceumicrodata/social-distancing)
+* [Expatriate Managers in International Trade](https://github.com/korenmiklos/expat-analysis)
 * Political Favoritism in Public Procurement
 * CEU-MTA Business Relations Survey
 
 # Live Demo
+## Home bias in public procurement
+1. Get data form Tenders Electronic Daily on EU procurement
+2. Check how many tenders are won by firms in the same country as the buyer
+3. Keep all steps reproducible. Tools used:
+    - Make
+    - git
+    - csvkit
+    - SQL
+
+## Data sources
+- [Tenders Electronic Daily 2009](https://data.europa.eu/euodp/en/data/dataset/ted-csv/resource/7caee4eb-0fc0-4fc0-ad1a-c970e63b40b4)
+- [Country codes](https://www.datahub.io/core/country-codes)
+
+## Bead
+- [Setup instructions](https://handbook.microdata.io/onboarding/setup#bead)
