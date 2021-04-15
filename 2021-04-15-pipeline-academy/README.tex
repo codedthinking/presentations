@@ -82,6 +82,19 @@
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
 \newif\ifbibliography
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
@@ -163,7 +176,8 @@ Ligatures=TeX]
 % \usepackage[notes,short,noibid,backend=biber]{biblatex-chicago}
 % \bibliography{course.bib} 
 
-\logo{\includegraphics[width=0.25\paperwidth]{../assets/logo/Horizontal/RGB/pdf/Koren_logo_horizontal_RGB_colorful.pdf}\hspace*{.70\paperwidth}}
+\titlegraphic{\includegraphics[width=0.33\paperwidth]{../assets/logo/Horizontal/RGB/pdf/Koren_logo_horizontal_RGB_colorful.pdf}}
+\providecommand{\exhibit}[2]{\includegraphics[keepaspectratio, height=0.9\textheight, width=\textwidth]{assets/img/#1}\\ {\tiny #2}}
 
 \title{Pipeline Data Academy}
 \author{Miklós Koren}
@@ -175,11 +189,133 @@ Ligatures=TeX]
 \hypertarget{introduction}{%
 \section{Introduction}\label{introduction}}
 
-\begin{frame}{A slide}
-\protect\hypertarget{a-slide}{}
-Some text is included here. Numbers 1, 2, 3. \[
-y = \frac1\gamma \sum x_i^2
-\]
+\begin{frame}{My first program}
+\protect\hypertarget{my-first-program}{}
+\includegraphics{assets/img/keyboard.jpg}
 \end{frame}
+
+\begin{frame}{My first useful program}
+\protect\hypertarget{my-first-useful-program}{}
+\includegraphics{assets/img/stencil.png}
+\end{frame}
+
+\begin{frame}{My first investment in data science}
+\protect\hypertarget{my-first-investment-in-data-science}{}
+\includegraphics{assets/img/zipdrive.jpg}
+\end{frame}
+
+\begin{frame}{My three hats}
+\protect\hypertarget{my-three-hats}{}
+\begin{enumerate}
+\tightlist
+\item
+  Research
+\item
+  Teaching
+\item
+  Reproducibility
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Research}
+\protect\hypertarget{research}{}
+Where: CEU MicroData, KRTK
+
+What: firm and worker behavior in the face of globalization and
+technical change. Mostly observational data.
+\end{frame}
+
+\begin{frame}{Teaching}
+\protect\hypertarget{teaching}{}
+Where: CEU, European Economic Association, Carpentries, CodedThinking
+\end{frame}
+
+\begin{frame}{Reproducibility}
+\protect\hypertarget{reproducibility}{}
+Where: Data Editor at Review of Economic Studies (\#5 journal in
+economics)
+
+What: Ensure data and code produce results published. Educate authors
+about best practices.
+\end{frame}
+
+\hypertarget{academic-research}{%
+\section{Academic Research}\label{academic-research}}
+
+\begin{frame}{Features of academic research}
+\protect\hypertarget{features-of-academic-research}{}
+\begin{enumerate}
+\tightlist
+\item
+  Always new questions, always new data
+\item
+  Often new methods (!)
+\item
+  Batch processing of ``historical'' data
+\item
+  Full transparency (!)
+\end{enumerate}
+\end{frame}
+
+\hypertarget{my-tools}{%
+\section{My Tools}\label{my-tools}}
+
+\begin{frame}{The pragmatic programmer}
+\protect\hypertarget{the-pragmatic-programmer}{}
+\begin{figure}
+\centering
+\includegraphics{assets/img/pragmatic.jpg}
+\caption{Hunt and Thomas 1999}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Generic tools and technologies}
+\protect\hypertarget{generic-tools-and-technologies}{}
+\begin{enumerate}
+\tightlist
+\item
+  Plain text: .csv, .md, .yaml, .tex
+\item
+  Command line:
+\item
+  Version control: git, GitHub, Sublime Merge
+\item
+  Dependency management: Make, bead
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Specific tools and technologies}
+\protect\hypertarget{specific-tools-and-technologies}{}
+\begin{enumerate}
+\tightlist
+\item
+  Data wrangling: Python (not pandas, not .ipynb), Stata
+\item
+  Statistics: Stata (no R jokes please)
+\item
+  Simulation: Julia
+\end{enumerate}
+\end{frame}
+
+\hypertarget{recent-projects}{%
+\section{Recent Projects}\label{recent-projects}}
+
+\begin{frame}{Recent projects}
+\protect\hypertarget{recent-projects-1}{}
+\begin{itemize}
+\tightlist
+\item
+  Business Disruptions from Social Distancing
+\item
+  Expatriate Managers in International Trade
+\item
+  Political Favoritism in Public Procurement
+\item
+  CEU-MTA Business Relations Survey
+\end{itemize}
+\end{frame}
+
+\hypertarget{live-demo}{%
+\section{Live Demo}\label{live-demo}}
 
 \end{document}
