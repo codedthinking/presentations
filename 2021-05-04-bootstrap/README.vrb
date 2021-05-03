@@ -1,0 +1,13 @@
+\frametitle{The Make solution}
+\protect\hypertarget{the-make-solution-2}{}
+\begin{itemize}
+\tightlist
+\item
+  If \texttt{data}, \texttt{estimator} and \texttt{statistic} are in
+  separate files, we can exploit the power of Make.
+\item
+  \texttt{estimator} can be however complex, as long as it reads
+  \texttt{data} and write \texttt{statistic}.
+\item
+  The bootstrap repetitions can be run in parallel.
+\end{itemize}
