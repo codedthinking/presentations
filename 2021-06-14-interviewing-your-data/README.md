@@ -9,6 +9,9 @@ aspectratio: 54
 ## Data vs story
 ## Data vs document
 
+## Tidy data
+
+
 # Where to find data?
 # How to get it?
 # HTTP and HTML
@@ -28,3 +31,5 @@ scraping = crawling + parsing
 2. Note the structure of URLs and tables
 3. Explore `robots.txt` and terms of use
 4. Explore robot protection
+
+# Exercise
