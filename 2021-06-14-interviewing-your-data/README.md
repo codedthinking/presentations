@@ -47,21 +47,24 @@ Contrary to the aphorism, data is *not* the plural of anecdote.
 - sort
 - vlookup
 
+# Exercise
 
-# Where to find data?
-# How to get it?
-# HTTP and HTML
-
+# Getting data
 ## What's in a URL?
-![How URLs work by Julia Evans](https://wizardzines.com/comics/how-urls-work/how-urls-work.png)
+![How URLs work by Julia Evans](assets/how-urls-work.png)
 
 ## What's HTTP?
-![by Julia Evans](https://wizardzines.com/comics/whats-http/whats-http.png)
+![by Julia Evans](assets/whats-http.png)
 
-# API, CSV, XML and JSON
+## API, CSV, XML and JSON
+The world of data is full of acronyms. 
 
-# Scraping
-## 
+* API: Application Programming Interface, the language in which machines talk to one another. Useful for automating data gathering and updating.
+* CSV: Comma Separated Values, a plain text format for data tables. Everything can read it and write it (beware of Excel).
+* XML: Extensible Markup Language, a structured document format to store hierarchical data. Very widely used, but not human friendly.
+* JSON: JavaScript Object Notation, the de facto web standard for sharing structured data. Similar to XML, but much more legible.
+
+## Scraping
 scraping = crawling + parsing
 
 ## Four steps of a scraping project
@@ -75,5 +78,15 @@ scraping = crawling + parsing
 2. Note the structure of URLs and tables
 3. Explore `robots.txt` and terms of use
 4. Explore robot protection
+
+## Crawl
+1. Download the pages you need.
+2. Verify that you have the correct number of pages.
+
+## Parse
+1. Find and extract the information within the HTML structure.
+2. Verify that you have everything you need. (Save link to original!)
+
+Crawling and parsing often done together in scraping apps.
 
 # Exercise
