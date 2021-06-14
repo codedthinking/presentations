@@ -10,7 +10,9 @@ aspectratio: 54
 ## Data vs document
 
 ## Tidy data
-
+1. Every row is an observation (case, record)
+2. Every column is a variable (feature, attribute)
+3. Every cell contains a single value
 
 # Where to find data?
 # How to get it?
