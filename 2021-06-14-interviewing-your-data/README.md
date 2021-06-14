@@ -8,6 +8,7 @@ aspectratio: 54
 # Tidy data
 ## Data vs story
 Contrary to the aphorism, data is *not* the plural of anecdote.
+
 - known structure
 - known collection method
 
@@ -40,7 +41,8 @@ Contrary to the aphorism, data is *not* the plural of anecdote.
 
 # Spreadsheets
 ## Learn to love your spreadsheet editor
-- Beware of Excel! Good alternatives: Libre Office, Open Office, Google Sheets.
+- Beware of Excel! 
+- Good alternatives: Libre Office, Open Office, Google Sheets.
 
 ## Useful steps
 - filter
