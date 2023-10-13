@@ -1,0 +1,25 @@
+\frametitle{Git commands covered}
+\protect\hypertarget{git-commands-covered}{}
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{git}\NormalTok{ init}
+\FunctionTok{ls} \AttributeTok{{-}al}
+\FunctionTok{git}\NormalTok{ status}
+\FunctionTok{git}\NormalTok{ add ted200{-}backup.csv }
+\FunctionTok{git}\NormalTok{ status}
+\FunctionTok{git}\NormalTok{ config }\AttributeTok{{-}{-}global}\NormalTok{ user.name }\StringTok{"Miklos Koren"}
+\FunctionTok{git}\NormalTok{ config }\AttributeTok{{-}{-}global}\NormalTok{ user.email }\StringTok{"foo@bar.com"}
+\FunctionTok{git}\NormalTok{ commit }\AttributeTok{{-}m} \StringTok{"Add 200{-}line version of TED"}
+\FunctionTok{git}\NormalTok{ log}
+\FunctionTok{head} \AttributeTok{{-}n100}\NormalTok{ ted200{-}backup.csv }\OperatorTok{\textgreater{}}\NormalTok{ ted100{-}backup.csv}
+\FunctionTok{mv}\NormalTok{ ted100{-}backup.csv ted200{-}backup.csv }
+\FunctionTok{git}\NormalTok{ diff}
+\FunctionTok{git}\NormalTok{ commit }\AttributeTok{{-}m} \StringTok{"Remove 102 lines from ted200{-}backup.csv"}
+\FunctionTok{git}\NormalTok{ add ted200{-}backup.csv }
+\FunctionTok{git}\NormalTok{ commit }\AttributeTok{{-}m} \StringTok{"Remove 102 lines from ted200{-}backup.csv"}
+\FunctionTok{git}\NormalTok{ add }\StringTok{"Command Line and Version Control.md"}
+\FunctionTok{git}\NormalTok{ commit }\AttributeTok{{-}m} \StringTok{"Add workshop notes"}
+\FunctionTok{git}\NormalTok{ diff}
+\FunctionTok{git}\NormalTok{ commit }\AttributeTok{{-}am} \StringTok{"Add another lesson the command line part"}
+\end{Highlighting}
+\end{Shaded}
